@@ -7,23 +7,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      todos:[
-        {
-          id:1,
-          content: 'Water plants',
-          priority:'Urgent'
-        },
-        {
-          id:2,
-          content: 'Cook tea',
-          priority:'Important'
-        },
-        {
-          id:3,
-          content: 'Watch youtube',
-          priority:'Can wait'
-        }
-      ]
+
     }
   }
 
