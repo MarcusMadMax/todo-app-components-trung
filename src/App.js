@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import NewTodoForm from './NewTodoForm';
 import Todo from './Todo';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -67,6 +66,8 @@ class App extends Component {
       todos:updated
     })
   } 
+
+  
 
   render(){
     return (
