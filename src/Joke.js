@@ -1,9 +1,14 @@
 import React from 'react'
 
 
-function Joke(){
+function Joke(props){
+
     return(
-        <h1>Hello</h1>
+        <div>
+            <h1>My super jokes</h1>
+            <h3 style={{display: props.question ? 'block' : 'none'}}>Question: {props.question}</h3>
+            <h3>Answer: {props.answer}</h3>
+        </div>
     )
 }
 
