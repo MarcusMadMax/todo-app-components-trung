@@ -1,18 +1,19 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './App.css'
 import Joke from './Joke'
+import JokesData from './JokesData'
 
-function App(){
-  return(
+function App() {
+
+  const  jokeComponents = JokesData.map((joke) => {
+    return (
+      <Joke key={joke.id} question={joke.question} answer={joke.punchLine} />
+    )
+  })
+
+  return (
     <div>
-    <Joke
-    question='How are you today?'
-    answer='Good tanks.'
-    />
-
-    <Joke
-    answer='Good tanks.'
-    />
+      {jokeComponents}
     </div>
   )
 }
